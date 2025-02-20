@@ -1,4 +1,6 @@
 <script lang="ts">
+	 import { t, locale, locales } from "$lib";
+
 	type angkatype = number;
 
 	type dataResponse = {
@@ -44,16 +46,24 @@
 
 		
 	}
-</script>
 
-<h1>hello ini svelta project saya</h1>
+</script>
+<p>
+    <select bind:value={$locale}>
+      {#each locales as l}
+        <option value={l}>{l}</option>
+      {/each}
+    </select>
+  </p>
+
+<h1>{$t("home.title")}</h1>
 
 <button onclick={() => angka++}>
 	click {angka}
 </button>
 
 <p>
-	ini akan berubah true ketika anda menekan tombol melebihi 10 <span
+	{$t("home.description")} <span
 		style="background-color: blue; color: #fff">{large}</span
 	>
 </p>
