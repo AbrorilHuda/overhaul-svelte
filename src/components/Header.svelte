@@ -32,6 +32,6 @@
     target="_blank"
      class="blueShadow relative overflow-hidden px-6 py-2 group rounded-full bg-white text-slate-950">
         <div class="absolute top-0 right-full w-full h-full bg-violet-400 opcity-20 group-hover:translate-x-full z-0 duration-200"></div>
-        <h4 class="relative z-9">Get in to Github {y}</h4>
+        <h4 class="relative z-9">Get in to Github</h4>
     </a>
 </header>
