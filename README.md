@@ -1,35 +1,30 @@
 # overhaul svelte
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+## Usage
 
-## Creating a project
-
-If you're seeing this, you've probably already done this step. Congrats!
-
-```bash
-# create a new project in my-app
-bun sv create my-app
+```sh
+git clone https://github.com/AbrorilHuda/overhaul-svelte.git &&
+cd overhaul
 ```
 
-## Developing
+## Install Defendensis
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+atau menggunakan yang lain seperti `npm`, `yarn`,`deno`,`pnpm`
 
-```bash
+```sh
+bun install
+```
+
+## Runnning
+
+```sh
 bun run dev
-
-# or start the server and open the app in a new browser tab
-bun run dev --open
 ```
 
-## Building
+## build aplication
 
-To create a production version of your app:
-
-```bash
-bun --bun run build
+```sh
+bun run build
 ```
 
-You can preview the production build with `bun run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+Nb: jika kalian melihat file `tailwind.confi.ts` itu saya buat hanya untuk mengaktifkan extension `Tailwind CSS IntelliSense` biar menampilkqn sugestionnya sebab extension masih belum compatibel dengan talwind version 4 sebab teilwind versi 4 sudah tidak butuh file configuration
