@@ -4,7 +4,7 @@
 
 ```sh
 git clone https://github.com/AbrorilHuda/overhaul-svelte.git &&
-cd overhaul
+cd overhaul-svelte
 ```
 
 ## Install Defendensis
