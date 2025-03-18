@@ -19,7 +19,9 @@
 
 <header class={'sticky z-[10] top-0 duration-200 px-6 py-3 flex items-center justify-between border border-solid' + (y > 0 ? 'py-4 bg-slate-950 border-violet-950': 'py-6 bg-transparent border-transparent')}>
     <h1 class="font-medium">
-        <b class="font-bold poppins">Abroril Huda</b>
+        <a href="/">
+            <b class="font-bold poppins">Abroril Huda</b>
+        </a>
     </h1>
     <div class="sm:flex items-center gap-4 hidden">
         {#each tabs as tab, index}

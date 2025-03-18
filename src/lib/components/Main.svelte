@@ -1,6 +1,6 @@
 <script>
 import { t, locale, locales } from "$lib";
-import Step from "../components/Step.svelte"
+import Step from "./Step.svelte"
 import steps from "./util/step"
 import benefits from "./util/benefit";
 
