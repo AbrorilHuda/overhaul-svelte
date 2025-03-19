@@ -45,9 +45,6 @@ const files = import.meta.glob<Record<string, Post>>("/posts/**/*.md", { eager: 
 export const posts: PostData[] = Object.entries(files)
   .map(([filepath, post]) => {
 
-    console.log("POST DATA  :", post)
-    console.log("INI CONTOH  ",parse("<h1>hello</h1>").querySelector("h1")?.structuredText)
-
     const html = parse("<p>hello</p>");
 
     // Pastikan post.metadata dan post.metadata.preview tidak undefined

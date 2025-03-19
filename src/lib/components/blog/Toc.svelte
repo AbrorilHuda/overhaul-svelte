@@ -1,14 +1,13 @@
-<script>
+<script lang="ts">
+  // sementara untuk type data menggunakan any masih harus banyak yang di fiks
     import { browser } from '$app/environment'
     import { onMount } from 'svelte'
     import Card from './Card.svelte'
   
     const {post} = $props()
-
-    console.log("data post toc",post)
   
-    let elements = []
-    let headings = post.headings
+    let elements: any = []
+    let headings = $state(post.headings)
   
     onMount(() => {
       updateHeadings()
@@ -16,13 +15,13 @@
     })
   
     let activeHeading = headings[0]
-    let scrollY
+    let scrollY: number
   
     function updateHeadings() {
       headings = post.headings
   
       if (browser) {
-        elements = headings.map((heading) => {
+        elements = headings.map((heading: any) => {
           return document.getElementById(heading.id)
         })
       }
@@ -31,7 +30,7 @@
       scrollY = window.scrollY
   
       const visibleIndex =
-        elements.findIndex((element) => element.offsetTop + element.clientHeight > scrollY) - 1
+        elements.findIndex((element: any) => element.offsetTop + element.clientHeight > scrollY) - 1
   
       activeHeading = headings[visibleIndex]
   

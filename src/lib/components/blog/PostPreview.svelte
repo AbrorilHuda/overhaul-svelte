@@ -4,7 +4,7 @@
     export let post
 </script>
   
-<Card href={`/post/${post.slug}`} props={{'data-sveltekit-prefetch': "hover"}}>
+<Card href={`/blog/post/${post.slug}`} props={{'data-sveltekit-prefetch': "hover"}}>
     <slot slot="eyebrow" name="eyebrow" />
     <slot slot="title">{post.title}</slot>
     <div slot="description" class="prose dark:prose-invert">
